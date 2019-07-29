@@ -38,7 +38,7 @@ def play(songs)
   song_choice = gets.chomp
 
   songs.each_with_index do | song, index |
-    if song_choice.to_i = index + 1 || song_choice = song
+    if song_choice.to_i == index + 1 || song_choice == song
       puts "Playing #{song}"
     else
       puts "Invalid input, please try again"
