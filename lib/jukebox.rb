@@ -48,10 +48,10 @@ end
 
 def exit_jukebox
   puts "Goodbye"
-end 
+end
 
-def run 
-  help 
+def run
+  help
   puts "Please enter a command:"
   command = gets.chomp
   if command_input === "exit"
@@ -61,7 +61,7 @@ def run
     run(songs)
   elsif command_input === "play"
     play(songs)
-    run(songs) 
+    run(songs)
   elsif command_input === "help"
     help
     run(songs)
