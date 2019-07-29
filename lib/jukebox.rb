@@ -39,12 +39,10 @@ def play(songs)
 
   if song_choice.between? (1, songs.length)
     puts "Playing #{songs[input.to_i - 1]}"
-  elsif 
+  elsif
     songs.include?(input)
     puts "Play #{input}"
-  else 
+  else
     "Invalid input, please try again"
-  end 
+  end
 end
-  
-    
