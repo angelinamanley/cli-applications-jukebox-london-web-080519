@@ -54,15 +54,15 @@ def run
   help
   puts "Please enter a command:"
   command = gets.chomp
-  if command_input === "exit"
+  if command === "exit"
     exit_jukebox
-  elsif command_input === "list"
+  elsif command === "list"
     list(songs)
     run(songs)
-  elsif command_input === "play"
+  elsif command === "play"
     play(songs)
     run(songs)
-  elsif command_input === "help"
+  elsif command === "help"
     help
     run(songs)
   else
