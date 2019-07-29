@@ -37,12 +37,11 @@ def play(songs)
   puts "Please enter a song name or number:"
   song_choice = gets.chomp
 
-  if song_choice.between? (1, songs.length)
-    puts "Playing #{songs[input.to_i - 1]}"
-  elsif
-    songs.include?(input)
-    puts "Play #{input}"
-  else
+  songs.each_with_index do | song, index |
+    if input.to_i = index +1 || input = song 
+      puts "Playing #{song}"
+    else
     "Invalid input, please try again"
-  end
-end
+    end
+  end 
+end 
